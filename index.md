@@ -1,6 +1,6 @@
 # KeySnap — Privacy Policy
 
-Last updated 7 October 2026
+Last updated 13 October 2026
 
 ## What is collected
 
@@ -17,6 +17,10 @@ The accessibility service detects physical hardware key presses to run the short
 ## Advanced Mode and the system bridge
 
 Advanced Mode pairs with your device's own Wireless Debugging over the local network and starts a small helper program that runs with shell privileges. That program reads hardware keys from the kernel and runs the actions in your shortcuts. It reads its configuration from a file the app writes and keeps no record of what you press. When a "Send a message" action has "Send automatically" on, the program also reads the screen layout of the messaging app KeySnap just opened, only while that app is in front and for a few seconds, to find its Send button and to check that the chat is with the person you chose and that the message field holds exactly your text, before it taps Send and once after. That layout is not stored, except for a moment in a private temporary file on some Android versions, deleted right away, and it is never logged or sent. Turning Advanced Mode off, or rebooting, stops it; turning it off also deletes it from the device.
+
+## Automatic restart (optional)
+
+Start after restart is off by default. When you enable it, KeySnap listens for the phone's restart and waits for the first unlock and a Wi-Fi connection before starting Advanced Mode again with your existing pairing. Android may ask you to allow Wireless Debugging on that network. Some phone makers also require an auto-launch setting. Advanced Mode grants KeySnap WRITE_SECURE_SETTINGS only for this option; it is used only to turn Wireless Debugging on and restore it when you turn the option or Advanced Mode off. The permission is revoked on disable. If the bridge is unavailable, KeySnap asks you to reconnect it to finish removing the permission. Wireless Debugging stays on while Advanced Mode runs. If KeySnap enabled it, disabling this option also stops Advanced Mode before restoring Wireless Debugging. KeySnap does not enable USB debugging or change Android's paired-key expiry setting. While this option and Advanced Mode are on, a daily job briefly reconnects to this device's own Wireless Debugging using the existing pairing. This does not guarantee that Android extends its expiry; an expired or removed pairing needs setup again. The option, whether KeySnap enabled Wireless Debugging, and the last pairing connection time are stored locally and excluded from backup. RECEIVE_BOOT_COMPLETED is used only to schedule this optional restart work. No restart or pairing data is sent to a server.
 
 ## Network use
 
@@ -41,5 +45,3 @@ The free version shows ads supplied by Google AdMob. AdMob receives only what it
 ## Changes
 
 If this policy changes, the updated version ships with the app update and the date above changes with it.
-
-
