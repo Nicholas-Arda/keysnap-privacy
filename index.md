@@ -1,10 +1,14 @@
 # KeySnap — Privacy Policy
 
-Last updated 13 October 2026
+Last updated 16 October 2026
 
 ## What is collected
 
-KeySnap has no servers, no accounts, no analytics and no crash reporting. KeySnap does not send the developer your shortcuts, key presses or usage history. Google's advertising and billing services receive the data described under "Advertising and purchases" below. Network requests, RSS feeds, messages and sharing that you configure or initiate may also send data to the destinations or apps you choose, as described below. If you share a shortcut, the app hands its text to the app you pick in Android's share sheet and sends it nowhere itself. Names of contacts and chats, phone numbers, RSS feed addresses and calendar names are left out of that text.
+KeySnap has no servers, no accounts, no analytics and no crash reporting. KeySnap does not send the developer your shortcuts, key presses or usage history, unless you send a problem recording yourself, as described under "Problem recordings (optional)" below. Google's advertising and billing services receive the data described under "Advertising and purchases" below. Network requests, RSS feeds, messages and sharing that you configure or initiate may also send data to the destinations or apps you choose, as described below. If you share a shortcut, the app hands its text to the app you pick in Android's share sheet and sends it nowhere itself. Names of contacts and chats, phone numbers, RSS feed addresses and calendar names are left out of that text.
+
+## Problem recordings (optional)
+
+If something does not work on your phone, you can start a problem recording in Settings → About. It is off unless you start it, and it stops by itself after 10 minutes or 500 lines. While it runs, the app keeps in memory only: your phone's maker, model, Android version and system build number, the app version, whether the accessibility service and Advanced Mode are on, whether your shortcuts are paused, how many shortcuts you have, and for each key event its key code, timing and the technical details Android attaches to it, which input path saw it, whether it was passed on or blocked, whether a shortcut matched and with which press type, and which type of action ran and whether it worked. Letter, number, symbol, space and other typing keys are recorded only as "a typing key", never which one, so text typed on a hardware keyboard while recording cannot be read back. Shortcuts appear only as a number derived from their internal id. It never records what an action contains, such as a command, URL, setting or typed text, nor shortcut names, contact or chat names, notification content, IP addresses or pairing codes. You can read the whole recording on screen before anything leaves the phone. Sending it opens your own e-mail app addressed to support@ardasenn.com; nothing is sent unless you press send there. The recording is deleted from the phone when you send or discard it, and is never written to storage. A recording you e-mail is used only to fix the problem you reported, and you can ask for it to be deleted by writing to the same address.
 
 ## What is stored on your device
 
