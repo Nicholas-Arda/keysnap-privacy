@@ -1,6 +1,7 @@
 # KeySnap — Privacy Policy
 
-Last updated 18 November 2026
+Last updated 22 November 2026
+
 ## What is collected
 
 KeySnap has no servers, no accounts, no analytics and no crash reporting. KeySnap does not send the developer your shortcuts, key presses or usage history, unless you send a problem recording yourself, as described under "Problem recordings (optional)" below. Google Play Billing receives the purchase data described under "Purchases" below. Network requests, RSS feeds, messages and sharing that you configure or initiate may also send data to the destinations or apps you choose, as described below. If you share a shortcut, the app hands its text to the app you pick in Android's share sheet and sends it nowhere itself. Names of contacts and chats, phone numbers, RSS feed addresses and calendar names are left out of that text. The optional AI model (Pro) is downloaded through Google Play and runs only on your phone; what you type never leaves it.
@@ -20,6 +21,10 @@ The accessibility service detects physical hardware key presses to run the short
 ## Advanced Mode and the system bridge
 
 Advanced Mode pairs with your device's own Wireless Debugging over the local network and starts a small helper program that runs with shell privileges. That program reads hardware keys from the kernel and runs the actions in your shortcuts. It reads its configuration from a file the app writes and keeps no record of what you press. When a "Send a message" action has "Send automatically" on, the program also reads the screen layout of the messaging app KeySnap just opened, only while that app is in front and for a few seconds, to find its Send button and to check that the chat is with the person you chose and that the message field holds exactly your text, before it taps Send and once after. That layout is not stored, except for a moment in a private temporary file on some Android versions, deleted right away, and it is never logged or sent. If Android reports the accessibility service as disconnected while it is still allowed, tapping Reconnect has the program turn KeySnap's own entry in Android's list of enabled accessibility services off and on again; other services stay as they are, and an entry that is off when you tap is never turned on. Turning Advanced Mode off, or rebooting, stops it; turning it off also deletes it from the device.
+
+## Sensitive apps (optional)
+
+Off until you add an app. While Advanced Mode runs, the program learns which app comes to the front from Android's own launch and task reports and compares it with your list in memory; it does not log, store or send which apps you open. For an app on your list it turns off only the switches you ticked for that app: developer options, KeySnap's own entry in the list of enabled accessibility services, and Wireless Debugging. It notes the first two in a file in its own folder and puts them back when you leave that app, or at its next start if it was stopped in between. Turning Wireless Debugging off also stops Advanced Mode; nothing turns it back on until you set Advanced Mode up again. Other accessibility services and settings are never changed.
 
 ## Automatic restart (optional)
 
