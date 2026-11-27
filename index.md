@@ -1,6 +1,6 @@
 # KeySnap — Privacy Policy
 
-Last updated 22 November 2026
+Last updated 28 November 2026
 
 ## What is collected
 
@@ -37,6 +37,10 @@ The app makes three kinds of network connection. The first is to your own device
 ## Digital assistant (optional)
 
 If you select KeySnap as your digital assistant in Android settings, assistant gestures run the shortcuts you assign to them. The voice interaction session has no visible interface and does not read screen contents or screenshots. Its required speech recognition service is a stub: KeySnap never records audio and requests no microphone permission. When an action opens another assistant, that app handles its own interface and privacy practices. The list of available assistants is not stored or logged.
+
+## Your phone's assistant (optional)
+
+On Android 16 and later you can let your phone's assistant use KeySnap, in Settings → Setup tools. It is off until you turn it on. While it is on, the assistant can ask KeySnap for the names of your shortcuts and whether each is switched on, run one of them by name, switch one on or off, pause or resume all of them, open one in KeySnap, and suggest a new shortcut, which KeySnap opens for you to review and save yourself. Shortcuts that contain a command, a link or text to type are never listed or run this way. KeySnap answers on your phone; what the assistant does with the names and your request is covered by the assistant's own privacy policy, and its maker may process your request on its servers. KeySnap itself sends nothing anywhere. Turning the switch off hides all of this from the assistant again.
 
 ## Permissions and why
 
